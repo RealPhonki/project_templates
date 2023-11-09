@@ -2,11 +2,11 @@ import discord
 from discord.ext import commands
 
 class Ping(commands.Cog):
-    def __init__(self, client):
-        self.client = client
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
     
     @commands.command()
-    async def ping(self, ctx):
+    async def ping(self, ctx: commands.Context) -> None:
         # get bot latency from discord api
         bot_latency = round(self.client.latency * 1000)
 
@@ -21,5 +21,5 @@ class Ping(commands.Cog):
 
 # add cog extension to "client" (the bot)
 # NOTE: THIS CODE RUNS FROM THE DIRECTORY THAT "main.py" IS IN
-async def setup(client):
-    await client.add_cog(Ping(client))
+async def setup(bot: commands.Bot) -> None:
+    await bot.add_cog(Ping(bot))
