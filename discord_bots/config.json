@@ -1,0 +1,7 @@
+{
+    "prefix": "/",
+    "token": "YOUR TOKEN HERE",
+    "application_id": "YOUR APPLICATION ID",
+    "sync_commands_globally": true,
+    "owners": []
+}
