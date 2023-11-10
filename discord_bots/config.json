@@ -1,6 +1,7 @@
 {
     "prefix": "/",
     "token": "YOUR TOKEN HERE",
+    "statuses": ["SOME", "STATUSES"],
     "application_id": "YOUR APPLICATION ID",
     "sync_commands_globally": true,
     "owners": []
